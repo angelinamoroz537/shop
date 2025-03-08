@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик покупок</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Контейнер кошика -->
+    <section class="cart">
+        <div class="container">
+            <h2>Ваш Кошик</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Кількість</th>
+                        <th>Ціна</th>
+                        <th>Видалити</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Тут будуть відображатися товари -->
+                    <tr>
+                        <td>Яблука</td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td>50 грн</td>
+                        <td><button class="remove-item">Видалити</button></td>
+                    </tr>
+                    <tr>
+                        <td>Банани</td>
+                        <td>
+                            <input type="number" value="2" min="1">
+                        </td>
+                        <td>60 грн</td>
+                        <td><button class="remove-item">Видалити</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total">
+                <h3>Загальна сума: <span id="total-price">170 грн</span></h3>
+            </div>
+            <button class="checkout-btn">Оформити замовлення</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
