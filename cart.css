@@ -85,3 +85,15 @@ body {
 .checkout-btn:hover {
     background-color: #218838;
 }
+
+
+.index{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    text-decoration: none;
+    background-color: #fff953;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 5px;
+}
